@@ -4,14 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>ROCK PAPER SCISSORS</title>
 </head>
 <body>
-    <main>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-    </main>
+  <header class="main">
+    <div class="container">
+        <div class="scoreBoard">
+            <div class="title">
+                <h3>ROCK</h3>
+                <h3>PAPER</h3>
+                <h3>SCISSORS</h3>
+            </div>
+            <div class="score">
+                <h3>SCORE</h3>
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="button-cta">
+            <div class="button_container">
+                <div class="triangle">
+                    <img src="./images/bg-triangle.svg"  alt="">
+                </div>
+                <div class="btn-row">
+                        <button  data-bdColor="color"><img src="./images/icon-paper.svg"  alt="paper"></button>
+                        <button data-bdColor="color2"><img src="./images/icon-scissors.svg" alt="paper"></button>
+                </div>
+                <div class="btn-row2">
+                    <button data-bdColor="color3"><img src="./images/icon-rock.svg" alt="paper"></button>
+                </div>
+            </div>  
+        </div> 
+    </div>
+    <div class="rules">
+        <button class="modalBtn">RULES</button>
+    </div>
+    <div class="modal">
+        <div class="modal-cta">
+            <div class="title">
+                <h1>RULES</h1>
+                <button class="close">X</button>
+            </div>
+            <hr cla>
+            <div class="modal-grid">
+                <div class="row1">
+                    <div>
+                        <button><img src="./images/icon-paper.svg" alt=""></button>
+                    </div>
+                    <div>
+                        <h2>BEATS</h2>
+                    </div>
+                    <div>
+                        <button><img src="./images/icon-rock.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="row1">
+                    <div>
+                        <button><img src="./images/icon-rock.svg" alt=""></button>
+                    </div>
+                    <div>
+                        <h2>BEATS</h2>
+                    </div>
+                    <div>
+                        <button><img src="./images/icon-scissors.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="row1">
+                    <div>
+                        <button><img src="./images/icon-scissors.svg" alt=""></button>
+                    </div>
+                    <div>
+                        <h2>BEATS</h2>
+                    </div>
+                    <div>
+                        <button><img src="./images/icon-paper.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+  </header>
     
 
     <script src="app.js"></script>

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;500;700&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: radial-gradient(hsl(214, 47%, 23%),hsl(237, 49%, 15%));
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    line-height: 1.2;
+    font-size: 16px;
+}
+.main{
+    max-width: 1366px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.main .container{
+    width:90%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    /* display: none; */
+    
+
+}
+.scoreBoard{
+    max-width: 450px;
+    height: auto;
+    margin: 0px auto;
+    display: flex;
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0px 0px 1px white;
+   
+}
+.scoreBoard .title{
+    text-align: start;
+    line-height: 0.9;
+}
+.scoreBoard .title h3{
+    font-size: 1.5rem;
+}
+.scoreBoard  .score{
+    width: 85px;
+    height: 65px;
+    padding: 10px 0;
+    border-radius: 7px;
+    color: hsl(229, 64%, 46%);
+    background: white;
+    box-shadow: 0 0 5px black;
+    line-height: 0.9;
+}
+.scoreBoard  .score h3{
+    font-size: 0.80rem;
+    font-weight: 500;
+    color: hsl(229, 64%, 46%);
+}
+.scoreBoard  .score p{
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: hsl(229, 25%, 31%);
+}
+
+/* Button sections */
+.main .container .button-cta{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 70%);
+}
+.main .container .button-cta .button_container{
+    position: relative;
+}
+.main .container .button-cta .button_container .triangle{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    
+}
+.main .container .button-cta .button_container .triangle img{
+    width: 270px;
+    height: 270px;
+    object-fit: cover;    
+}
+
+.main .container .button-cta .button_container .btn-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    justify-items: center;
+       
+    
+}
+.main .container .button-cta .button_container .btn-row button{
+  padding: 35px 35px;
+  border-radius: 50%;
+  display: inline-block;
+  outline: none;    
+  background: whitesmoke;
+  z-index: 100;
+  cursor: pointer;
+  box-shadow: inset 0px  4px  2px lightgray;
+  
+  
+}
+.main .container .button-cta .button_container .btn-row button img{
+  width: 40px;
+  height: 40px;
+  object-fit: fill;
+  
+}
+
+
+.main .container .button-cta .button_container .btn-row2{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 30%);
+}
+.main .container .button-cta .button_container .btn-row2 button{
+    padding: 35px 35px;
+    border-radius: 50%;
+    display: inline-block;
+    outline: none;    
+    background: whitesmoke;
+    z-index: 100;
+    cursor: pointer;
+    box-shadow: inset 0px  4px  2px lightgray;
+    
+  }
+  .main .container .button-cta .button_container .btn-row2 button img{
+    width: 40px;
+    height: 40px;
+    object-fit: fill;
+    
+  }
+  .main .container .button-cta .button_container .btn-row button[data-bdColor="color"]{
+    border: 11px solid  hsl(230, 89%, 62%);   
+    
+  }
+  .main .container .button-cta .button_container .btn-row button[data-bdColor="color2"]{
+    border: 11px solid  hsl(39, 89%, 49%) ;    
+  }
+  .main .container .button-cta .button_container .btn-row2 button[data-bdColor="color3"]{
+    border: 11px solid  hsl(349, 71%, 52%);    
+  }
+
+  .main .rules{
+    position: absolute;
+    bottom:20px;
+    right: 20px;  
+  }
+  .main .rules button{
+    outline: none;
+    padding: 7px 20px;
+    border: 2px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: white;
+    border-radius: 7px;
+    position: relative;
+  }
+
+  /* MODAL CLASS */
+
+  .main .modal{
+    background: white;
+    width:350px;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 0 4px lightgray;
+    opacity: 1;
+    transition-duration: 2s;
+    z-index: 2;
+    display: none;
+    
+  }
+  .main .modal .modal-cta{
+    width: 100%;
+    height: 100%;
+  }
+  .main .modal .modal-cta .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .main .modal .modal-cta .title h1{
+    font-size: 1.4rem;
+    color:hsl(214, 47%, 23%)
+  }
+  .main .modal .modal-cta .title .close{
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    color: lightgrey;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+.modal-grid{
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.modal-grid .row1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    margin: 10px 0;
+}
+.modal-grid .row1 div button{
+    padding: 10px 10px;
+    border-radius: 50%;
+    display: inline-block;
+    outline: none;    
+    background: whitesmoke;
+    z-index: 100;
+    box-shadow: inset 0px  4px  2px lightgray;
+    border: 9px solid grey ;
+}
+.modal-grid .row1 div button img{
+    width: 40px;
+    height: 40px;
+    object-fit: fill;
+}
+hr{
+    border: 1px solid lightgray;
+}
+.main .modal:hover{
+    opacity: 0;
+}

@@ -31,31 +31,32 @@ function playRound(playerSelection, computerSelection){
 }
 
 //A function to play the game for 5 rounds
-function game(){
-    for (let i = 0; i < 5; i++){
-        let playerChoice = prompt('Please choose either rock, paper or scissors: ').toLowerCase();
-        let computerChoice = getComputerChoice();
-        console.log(playRound(playerChoice, computerChoice))
-    }
-    //Check for the winner
-    if(playerScore > comScore){
-        console.log(`Player Wins the game`)
-    }else if (playerScore < comScore){
-        console.log(`Computer wins the game`)
-    }else if (playerScore == comScore){
-        console.log('its a draw');
-        //Replay the game if its a draw
-        for (let i = 0; i < 5; i++){
-            let playerChoice = prompt('Please choose either rock, paper or scissors: ').toLowerCase();
-            let computerChoice = getComputerChoice();
-            console.log(playRound(playerChoice, computerChoice))
-        }
-    }
-}
+// function game(){
+//     for (let i = 0; i < 5; i++){
+//         let playerChoice = prompt('Please choose either rock, paper or scissors: ').toLowerCase();
+//         let computerChoice = getComputerChoice();
+//         console.log(playRound(playerChoice, computerChoice))
+//     }
+//     //Check for the winner
+//     if(playerScore > comScore){
+//         console.log(`Player Wins the game`)
+//     }else if (playerScore < comScore){
+//         console.log(`Computer wins the game`)
+//     }else if (playerScore == comScore){
+//         console.log('its a draw');
+//         //Replay the game if its a draw
+//         for (let i = 0; i < 5; i++){
+//             let playerChoice = prompt('Please choose either rock, paper or scissors: ').toLowerCase();
+//             let computerChoice = getComputerChoice();
+//             console.log(playRound(playerChoice, computerChoice))
+//         }
+//     }
+// }
 
 //A function to check who wins
+// console.log(game())
 
-console.log(game())
+
 
 
 
